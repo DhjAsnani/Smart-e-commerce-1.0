@@ -1,0 +1,218 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- Bootstrap Core CSS -->
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/fontss.css">
+		<link rel="stylesheet" href="css/custom1.css">
+		<link rel="stylesheet" href="css/custom2.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<style>
+input[type="text"]{
+	border: none;
+	margin: 5px 0;
+	box-shadow: 0px 10px 0px -7px black, 0px 10px 0px -7px black;
+  	-webkit-transition: box-shadow 1s;
+  	-moz-transition: box-shadow 1s;
+  	transition: box-shadow 1s;
+}
+input[type=text]:focus {
+  outline: none;
+  box-shadow: 0px 10px 0px -7px #6600cc, 0px 10px 0px -7px #6600cc;
+}
+input[type="email"]{
+	border: none;
+	margin: 5px 0;
+	box-shadow: 0px 10px 0px -7px black, 0px 10px 0px -7px black;
+  	-webkit-transition: box-shadow 1s;
+  	-moz-transition: box-shadow 1s;
+  	transition: box-shadow 1s;
+}
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0px 10px 0px -7px #6600cc, 0px 10px 0px -7px #6600cc;
+}
+input[type="password"]{
+	border: none;
+	margin: 5px 0;
+	box-shadow: 0px 10px 0px -7px black, 0px 10px 0px -7px black;
+  	-webkit-transition: box-shadow 1s;
+  	-moz-transition: box-shadow 1s;
+  	transition: box-shadow 1s;
+}
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0px 10px 0px -7px #6600cc, 0px 10px 0px -7px #6600cc;
+}
+#header {
+    background-color:#6600cc;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#page {
+	margin: 0px auto;
+	width: 800px;
+	height: 800px;
+	top: 40px;
+	position: relative;
+}
+#login {
+	background-color:white;
+	height: 400px;
+	width: 300px;
+	float: left;
+}
+#signUp{
+	background-color:white;
+	height: 450px;
+	width: 400px;
+	position: absolute;
+	right:0px;
+	padding: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="header">
+<h1>Smart e-commerce</h1>
+</div>
+
+<div id="page">
+
+<div id="login" class="container">
+<h1 class="text-primary">Login</h1>
+<form role="form">
+    <div class="form-group">
+      <label for="email"><h3>Email/Mob. number:</h3></label>
+      <input type="text" class="form-control" id="email" >
+    </div>
+    <div class="form-group">
+      <label for="pwd"><h3>Password:</h3></label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <button type="submit" class="btn btn-info btn-block">Log In</button>
+  </form>
+</div>
+
+			<div id="signUp" class="container">
+                        <form role="form">
+                            <h1 class="text-primary">Not a member, Join Us!!</h1>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="3">
+                                <!--<i class="form-control-feedback glyphicon glyphicon-envelope"></i>-->
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="mobile" id="mobile" class="form-control input-lg" placeholder="Mobile No." tabindex="4">
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-3 col-md-3">
+                                    <span class="button-checkbox">
+						<button type="button" class="btn btn-success" data-color="info" tabindex="7">I Agree</button>
+                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+					</span>
+                                </div>
+                                <div class="col-xs-8 col-sm-9 col-md-9">
+                                    By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site.
+                                </div>
+                            </div>
+                            <input type="submit" value="Register" class="btn btn-info btn-block" tabindex="7">
+
+
+
+                        </form>
+
+
+            </div>
+
+<!---
+<div id="signUp" class="container">
+<h1 class="text-primary">Not a member, Join Us!!</h1>
+<form role="form">
+    <div class="form-group">
+      <label for="name"><h3>Name:</h3></label>
+      <input type="text" class="form-control" id="name" >
+    </div>
+    <div class="form-group">
+      <label for="email"><h3>Email/Mob. number:</h3></label>
+      <input type="email" class="form-control" id="email" >
+    </div>
+    <div class="form-group">
+      <label for="pwd"><h3>Password:</h3></label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <button type="submit" class="btn btn-info btn-block">Log In</button>
+</form>
+
+
+
+
+<form>
+
+<h3>Not a member, Join Us!!</h3>
+Name</br>
+<input type="text" name="Name"></br>
+Email Id</br>
+<input type="text" name="Email"></br>
+Mobile</br>
+<input type="text" name="Mobile"></br>
+Password</br>
+<input type="password" name="password"></br>
+Password again</br>
+<input type="password" name="passwordConfirm"></br>
+<input type="submit" value="Sign Up">
+
+
+</form>
+</div>
+-->
+</div>
+
+<!-- jQuery -->
+<script src="/home/gaurav/Desktop/bootstrap-3.3.6/dist/scripts/jquery.min.js">
+</script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/home/gaurav/Desktop/bootstrap-3.3.6/dist/js/bootstrap.min.js">
+</script>
+
+</body>
+
+</html>
